@@ -1,3 +1,4 @@
+-- NOTE: add plugins here
 return {
   {
     "Exafunction/codeium.vim"
@@ -24,11 +25,11 @@ return {
   { "lvimuser/lsp-inlayhints.nvim", config = true },
   { "nvim-treesitter/playground",   cmd = "TSHighlightCapturesUnderCursor", dependencies = { "nvim-treesitter" } },
   {
-    "nvim-telescope/telescope.nvim",
-    defaults = {
-      file_ignore_patterns = {
-        "node_modules"
-      }
-    }
+    "folke/todo-comments.nvim",
+    lazy = false,
+    requires = "nvim-lua/plenary.nvim",
+    config = function()
+      require("todo-comments").setup()
+    end,
   }
 }
