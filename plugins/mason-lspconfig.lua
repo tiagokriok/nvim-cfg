@@ -18,12 +18,9 @@ return {
       "tailwindcss",
       "sqlls",
       "volar",
-      "stylua",
-      "prettierd",
       "lua_ls",
-      "jsonlint",
       "docker_compose_language_service",
-      "yamlls"
+      "yamlls",
     },
   },
 }

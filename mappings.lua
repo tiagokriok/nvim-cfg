@@ -24,6 +24,7 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
 
     ["<leader>z"] = { "<cmd>ZenMode<cr>", desc = "Zen Mode" },
+    ["<leader>gg"] = { "<cmd>Git<cr>", desc = "Fugitive Git" },
   },
   t = {
     -- setting a mapping to false will disable it

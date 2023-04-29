@@ -3,9 +3,9 @@ vim.api.nvim_create_autocmd(
   { pattern = { "*.txt", "*.md", "*.tex" }, command = "setlocal spell" }
 )
 
-require('telescope').setup { defaults = { file_ignore_patterns = { "node_modules" } } }
+require("telescope").setup { defaults = { file_ignore_patterns = { "node_modules" } } }
 
-require('neo-tree').setup {
+require("neo-tree").setup {
   filesystem = {
     filtered_items = {
       hide_dotfiles = false,
@@ -14,9 +14,9 @@ require('neo-tree').setup {
         ".DS_Store",
         "node_modules",
         ".git",
-      }
-    }
-  }
+      },
+    },
+  },
 }
 
-require('todo-comments').setup()
+require("todo-comments").setup()

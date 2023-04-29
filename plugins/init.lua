@@ -1,6 +1,7 @@
 return {
   {
-    "tpope/vim-fugitive"
+    "tpope/vim-fugitive",
+    lazy = false,
   },
   {
     "karb94/neoscroll.nvim",
@@ -23,8 +24,6 @@ return {
     "folke/todo-comments.nvim",
     lazy = false,
     requires = "nvim-lua/plenary.nvim",
-    config = function()
-      require("todo-comments").setup()
-    end,
-  }
+    config = function() require("todo-comments").setup() end,
+  },
 }
