@@ -25,6 +25,7 @@ return {
 
     ["<leader>z"] = { "<cmd>ZenMode<cr>", desc = "Zen Mode" },
     ["<leader>gg"] = { "<cmd>Git<cr>", desc = "Fugitive Git" },
+    ["<leader>R"] = { "<cmd>e<cr>", desc = "Reload File" },
   },
   t = {
     -- setting a mapping to false will disable it
