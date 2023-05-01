@@ -26,6 +26,7 @@ return {
     ["<leader>z"] = { "<cmd>ZenMode<cr>", desc = "Zen Mode" },
     ["<leader>gg"] = { "<cmd>Git<cr>", desc = "Fugitive Git" },
     ["<leader>R"] = { "<cmd>e<cr>", desc = "Reload File" },
+    ["<leader>+"] = { "<cmd>set foldmethod=expr<cr>", desc = "Change Fold Method" },
   },
   t = {
     -- setting a mapping to false will disable it
